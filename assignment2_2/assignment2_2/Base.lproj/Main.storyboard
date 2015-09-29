@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="assignment2_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjy-ux-KJs">
+                                <rect key="frame" x="279" y="290" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mJM-6n-dWH">
+                                <rect key="frame" x="150" y="20" width="300" height="225"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="Tf5-ei-V9W">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="3qk-ob-W1q"/>
+                                            <constraint firstAttribute="height" constant="180" id="FGx-wh-jgP"/>
+                                            <constraint firstAttribute="height" constant="180" id="kK1-Sv-M0Y"/>
+                                            <constraint firstAttribute="width" constant="120" id="sMx-6v-pZf"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="kK1-Sv-M0Y"/>
+                                                <exclude reference="sMx-6v-pZf"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="1cl-5y-Wqy"/>
+                                    <constraint firstAttribute="width" constant="300" id="NAh-nx-gyx"/>
+                                    <constraint firstItem="Tf5-ei-V9W" firstAttribute="leading" secondItem="mJM-6n-dWH" secondAttribute="leading" id="cqf-VW-Djd"/>
+                                    <constraint firstItem="Tf5-ei-V9W" firstAttribute="leading" secondItem="mJM-6n-dWH" secondAttribute="leading" id="ogv-MC-ReL"/>
+                                    <constraint firstItem="Tf5-ei-V9W" firstAttribute="top" secondItem="mJM-6n-dWH" secondAttribute="top" id="zV9-hx-83q"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ogv-MC-ReL"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="mJM-6n-dWH" secondAttribute="centerX" id="F3V-4B-OHU"/>
+                            <constraint firstAttribute="centerY" secondItem="mJM-6n-dWH" secondAttribute="centerY" id="Mor-vw-ttl"/>
+                            <constraint firstItem="mJM-6n-dWH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="Ns6-2x-Ny2"/>
+                            <constraint firstAttribute="centerY" secondItem="Tjy-ux-KJs" secondAttribute="centerY" id="WZv-W8-lbM"/>
+                            <constraint firstAttribute="centerY" secondItem="mJM-6n-dWH" secondAttribute="centerY" id="bYS-MV-foj"/>
+                            <constraint firstAttribute="centerX" secondItem="Tjy-ux-KJs" secondAttribute="centerX" id="z4A-DZ-g0h"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Mor-vw-ttl"/>
+                                <exclude reference="bYS-MV-foj"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="myBase" destination="Tf5-ei-V9W" id="HKn-Cg-HbO"/>
+                        <outlet property="myView" destination="mJM-6n-dWH" id="Isq-jh-1Z2"/>
+                        <outlet property="swipeLabel" destination="Tjy-ux-KJs" id="jer-oP-db3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="120" height="170"/>
+    </resources>
+</document>
